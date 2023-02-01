@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>cifrado</title>
+    
+
+</head>
+<body>
+
+<header>
+		<img src="logo.png" alt="Aplicacion incriptar">
+	</header>
+
+	<main>
+		<section class="parte1">
+			<textarea class="resultado" id="textoDesencriptado" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+		
+		</section>
+		<section class="parte2">
+			<div class="contenedor_imagen">
+				<img src="muñeco.png" alt=muñeco> 
+			</div>
+			<div class="contenedor_subtitulo" >
+				<h1> Ningún mensaje fue encontrado</h1>
+			</div>
+			<div class="contenedor_parrafo">
+				<p>Ingresa el texto que desees encriptar o desencriptar.</p>
+				<button type="button" id="botonCopiar" value="copiar" class="botonCopiar">Copiar</button>
+
+		</section>
+		
+	</main>
+
+	
+
+<input type="text" id ="textoEncriptado" >
+
+<button type="button" id="botonEncriptado" value="Encriptar" class="botonEncriptar">Encriptar </button>
+<button type="button" id="botonDesencriptado" value="Desencriptar" class="botonDesencriptar">Desencriptar </button>
+
+
+</body>
+<script >
+	
+var btn = document.querySelector("#botonEncriptado");
+btn.onclick = Encriptar;
+var btn2 = document.querySelector("#botonDesencriptado");
+btn2.onclick = Desencriptar;
+var btn3 = document.querySelector("#botonCopiar");
+btn3.onclick = Copiar;
+
+</script>
+
+
+</html>
+
+
+
+
+
+	
+
+
